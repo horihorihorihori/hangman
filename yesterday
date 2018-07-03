@@ -1,0 +1,30 @@
+class Stack:
+	def __init__(self):
+		self.items = []
+
+	def is_empty(self):
+		return self.items == []
+
+	def push(self,item):
+		self.items.append(item)
+
+	def pop(self):
+		return self.items.pop()
+
+	def size(self):
+		return len(self.items)
+
+list = range(1,10)
+print(list)
+
+new_list = []
+
+stack = Stack()
+
+for c in list:
+	stack.push(c)
+
+while len(stack.items):
+	new_list.append(stack.pop())
+
+print(new_list)	

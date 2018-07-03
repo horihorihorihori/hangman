@@ -1,0 +1,7 @@
+def anagram(word1,word2):
+	w1 = word1.lower()
+	w2 = word2.lower()
+	return sorted(w1) == sorted(w2)
+
+print(anagram("iceman","cinema"))
+print(anagram("less","tree"))
