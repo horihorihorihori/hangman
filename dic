@@ -1,0 +1,11 @@
+import pprint
+
+messages = 'I am HIRO'
+count = {}
+
+for i in messages:
+	count.setdefault(i,0)
+	count[i] = count[i] + 1
+
+
+pprint.pprint(count)

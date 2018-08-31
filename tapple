@@ -1,0 +1,8 @@
+import copy
+
+eggs = [[1,2,3],42,11]
+Hon = copy.copy(eggs)
+Hon[0] = [4,5,6]
+
+print(eggs)
+print(Hon)

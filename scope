@@ -1,0 +1,6 @@
+def spam():
+	print(eggs)
+	eggs = "spam"
+
+eggs = "meet"
+spam()

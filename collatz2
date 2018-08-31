@@ -1,0 +1,16 @@
+def collatz(Number):
+	if Number % 2 == 0:
+		return Number / 2
+	else:
+		return  3 * Number + 1
+
+while True:
+	print("値を入力してください")
+	number = int(input())
+
+	if collatz(number) == 1:
+		print("終了")
+		break
+	else:
+		print(collatz(number))
+
